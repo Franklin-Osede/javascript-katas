@@ -1,79 +1,180 @@
-# JavaScript Katas - Preparación para Entrevistas
+# JavaScript Katas
 
-Este repositorio contiene ejercicios progresivos de JavaScript para prepararte para entrevistas de programación.
+A comprehensive collection of JavaScript exercises designed to improve your debugging skills and master common code smells.
 
-## Estructura del Proyecto
+## 🎯 Overview
+
+This repository contains **100 code smell exercises** and **14 practice exercises** to help you master JavaScript fundamentals, debugging techniques, and common programming patterns.
+
+## 📁 Project Structure
 
 ```
 javascript-katas/
-├── ejercicios/
-│   ├── nivel-1-basico/          # Conceptos básicos
-│   ├── nivel-2-intermedio/      # Arrays, objetos, funciones
-│   ├── nivel-3-avanzado/        # Algoritmos complejos
-│   └── nivel-4-debugging/       # Ejercicios de debugging
-├── soluciones/                  # Soluciones de referencia
-└── tests/                       # Tests para validar soluciones
+├── src/
+│   ├── code-smells/           # 100 code smell exercises
+│   │   ├── smells-1-10/      # Code smells 1-10 + tests
+│   │   ├── smells-11-20/     # Code smells 11-20 + tests
+│   │   ├── smells-21-30/     # Code smells 21-30 + tests
+│   │   ├── smells-31-40/     # Code smells 31-40 + tests
+│   │   ├── smells-41-50/     # Code smells 41-50 + tests
+│   │   ├── smells-51-60/     # Code smells 51-60 + tests
+│   │   ├── smells-61-70/     # Code smells 61-70 + tests
+│   │   ├── smells-71-80/     # Code smells 71-80 + tests
+│   │   ├── smells-81-90/     # Code smells 81-90 + tests
+│   │   └── smells-91-100/    # Code smells 91-100 + tests
+│   ├── exercises/            # 14 interview exercises
+│   ├── practice/             # Empty practice files
+│   └── exercises/tests/     # Test files for exercises
+├── package.json
+└── README.md
 ```
 
-## Cómo usar este repositorio
+## 🐛 Code Smells (100 Exercises)
 
-1. **Instala las dependencias:**
-   ```bash
-   npm install
-   ```
+Practice identifying and fixing common JavaScript issues:
 
-2. **Elige un ejercicio:**
-   - Ve a la carpeta `ejercicios/nivel-X/`
-   - Lee el archivo `README.md` del ejercicio
-   - Abre el archivo `.js` correspondiente
+- **Memory Leaks** - Event listeners, closures, global variables
+- **Infinite Loops** - Loop conditions, recursion
+- **Race Conditions** - Async operations, shared state
+- **Type Errors** - Data type validation, null/undefined handling
+- **Performance Issues** - Algorithm optimization, resource usage
+- **Scope Problems** - Variable scope, closure behavior
+- **Mutation Issues** - Object/array immutability
+- **Async/Await Pitfalls** - Promise handling, error management
+- **Logic Errors** - Boolean logic, comparison operators
+- **Array/Object Bounds** - Index access, property validation
 
-3. **Resuelve el ejercicio:**
-   - Escribe tu código en el archivo
-   - Usa `console.log()` para debuggear
-   - Ejecuta: `node ejercicio.js`
+## 💼 Practice Exercises (14 Categories)
 
-4. **Valida tu solución:**
-   ```bash
-   npm test ejercicio.test.js
-   ```
+Master common programming topics:
 
-## Plan de Estudio (5 días)
+- **Array Manipulation** - Filter, map, reduce, sorting
+- **String Manipulation** - Parsing, validation, transformation
+- **Object Manipulation** - Deep cloning, merging, iteration
+- **Async Programming** - Promises, async/await, error handling
+- **Algorithms** - Sorting, searching, recursion
+- **Data Structures** - Stacks, queues, trees, graphs
+- **Functional Programming** - Pure functions, immutability
+- **Error Handling** - Try/catch, custom errors, validation
+- **Performance Optimization** - Caching, debouncing, throttling
+- **Testing** - Unit tests, mocking, test utilities
+- **DOM Manipulation** - Event handling, element creation
+- **Security** - XSS prevention, input validation
+- **Utilities** - Helper functions, common patterns
+- **Mock Interview** - Real interview scenarios
 
-### Día 1: Fundamentos
-- Variables y tipos de datos
-- Operadores
-- Estructuras de control (if/else, loops)
-- Funciones básicas
+## 🛠️ Getting Started
 
-### Día 2: Arrays y Objetos
-- Manipulación de arrays
-- Métodos de array (map, filter, reduce)
-- Objetos y destructuring
-- Spread operator
+### Prerequisites
 
-### Día 3: Funciones Avanzadas
-- Callbacks
-- Closures
-- Arrow functions
-- Higher-order functions
+- Node.js (v14 or higher)
+- npm or yarn
 
-### Día 4: Algoritmos
-- Búsqueda y ordenamiento
-- Recursión
-- Estructuras de datos básicas
-- Complejidad algorítmica
+### Installation
 
-### Día 5: Debugging y Práctica
-- Ejercicios de debugging
-- Resolución de problemas complejos
-- Simulación de entrevista
+```bash
+# Clone the repository
+git clone https://github.com/Franklin-Osede/javascript-katas.git
 
-## Tips para las Entrevistas
+# Navigate to the project
+cd javascript-katas
 
-1. **Piensa en voz alta** - Explica tu proceso de pensamiento
-2. **Haz preguntas** - Clarifica los requisitos antes de empezar
-3. **Empieza simple** - Primero una solución básica, luego optimiza
-4. **Usa console.log()** - Para debuggear y mostrar tu progreso
-5. **Considera edge cases** - ¿Qué pasa con arrays vacíos, null, etc.?
+# Install dependencies
+npm install
+```
 
-¡Buena suerte en tu entrevista! 🚀
+### Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run specific test files
+npm test src/code-smells/smells-1-10/tests/
+
+# Run with coverage
+npm run test:coverage
+```
+
+## 🎯 How to Use
+
+### Code Smells Practice
+
+1. **Open a code smell file** (e.g., `smell1-memory-leak.js`)
+2. **Read the TODO comments** to understand the problem
+3. **Use debugging techniques** to identify the issue
+4. **Write tests** in the corresponding test file
+5. **Fix the code** and verify your solution
+
+### Practice Exercises
+
+1. **Open an exercise file** (e.g., `array-manipulation.js`)
+2. **Read the requirements** in the TODO comments
+3. **Implement the solution** in the practice file
+4. **Write tests** to validate your implementation
+5. **Compare with the exercise solution**
+
+## 🔧 Debugging Techniques
+
+Master these debugging skills:
+
+- **Console Methods**: `log()`, `error()`, `warn()`, `info()`, `table()`, `group()`, `time()`, `trace()`, `count()`, `assert()`, `dir()`
+- **Browser DevTools**: Breakpoints, step-through debugging, performance profiling
+- **Memory Debugging**: Heap snapshots, memory leaks detection
+- **Performance Analysis**: Execution time, resource usage, bottlenecks
+
+## 📚 Learning Path
+
+### Week 1: Code Smells (1-20)
+- Focus on basic debugging techniques
+- Practice with console methods
+- Learn to identify common issues
+
+### Week 2: Code Smells (21-40)
+- Advanced debugging scenarios
+- Performance optimization
+- Memory management
+
+### Week 3: Code Smells (41-60)
+- Complex async patterns
+- Error handling strategies
+- Testing methodologies
+
+### Week 4: Code Smells (61-80)
+- Advanced JavaScript concepts
+- Scope and closure issues
+- Object manipulation
+
+### Week 5: Code Smells (81-100)
+- Expert-level debugging
+- Complex algorithms
+- Advanced programming patterns
+
+### Week 6-7: Practice Exercises
+- Practice common programming challenges
+- Implement solutions from scratch
+- Master pair programming scenarios
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new functionality
+5. Submit a pull request
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Inspired by common JavaScript programming patterns
+- Designed for practical debugging practice
+- Focused on real-world scenarios
+
+---
+
+**Happy Coding! 🚀**
+
+*Practice makes perfect - especially when debugging JavaScript!*
