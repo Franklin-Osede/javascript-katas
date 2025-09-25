@@ -1,0 +1,26 @@
+{
+  "name": "javascript-katas",
+  "version": "1.0.0",
+  "description": "JavaScript interview preparation with code smells and debugging practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "start": "node index.js",
+    "debug": "node --inspect index.js"
+  },
+  "keywords": ["javascript", "interview", "debugging", "code-smells", "practice"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js"
+    ]
+  }
+}
