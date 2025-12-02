@@ -1,12 +1,25 @@
 # JavaScript Katas
 
-A comprehensive collection of JavaScript exercises designed to improve your debugging skills and master common code smells.
+A personal collection of JavaScript exercises I'm working on to improve my debugging skills and master common code smells.
 
-## 🎯 Overview
+## Overview
 
-This repository contains **100 code smell exercises** and **14 practice exercises** to help you master JavaScript fundamentals, debugging techniques, and common programming patterns.
+This is my personal practice repository containing 100 code smell exercises and 14 practice exercises to help me master JavaScript fundamentals, debugging techniques, and common programming patterns. This is a work in progress project that I'm actively developing.
 
-## 📁 Project Structure
+## Table of Contents
+
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Code Smells](#code-smells)
+- [Practice Exercises](#practice-exercises)
+- [Getting Started](#getting-started)
+- [How to Use](#how-to-use)
+- [Debugging Techniques](#debugging-techniques)
+- [Learning Path](#learning-path)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Structure
 
 ```
 javascript-katas/
@@ -22,48 +35,53 @@ javascript-katas/
 │   │   ├── smells-71-80/     # Code smells 71-80 + tests
 │   │   ├── smells-81-90/     # Code smells 81-90 + tests
 │   │   └── smells-91-100/    # Code smells 91-100 + tests
-│   ├── exercises/            # 14 interview exercises
-│   ├── practice/             # Empty practice files
-│   └── exercises/tests/     # Test files for exercises
+│   ├── exercises/            # 14 interview exercises with solutions
+│   ├── practice/             # Practice files for my solutions
+│   └── exercises/tests/      # Test files for exercises
 ├── package.json
 └── README.md
 ```
 
-## 🐛 Code Smells (100 Exercises)
+## Code Smells
 
-Practice identifying and fixing common JavaScript issues:
+I'm practicing identifying and fixing common JavaScript issues across 100 exercises:
 
-- **Memory Leaks** - Event listeners, closures, global variables
-- **Infinite Loops** - Loop conditions, recursion
-- **Race Conditions** - Async operations, shared state
-- **Type Errors** - Data type validation, null/undefined handling
-- **Performance Issues** - Algorithm optimization, resource usage
-- **Scope Problems** - Variable scope, closure behavior
-- **Mutation Issues** - Object/array immutability
-- **Async/Await Pitfalls** - Promise handling, error management
-- **Logic Errors** - Boolean logic, comparison operators
-- **Array/Object Bounds** - Index access, property validation
+- Memory Leaks - Event listeners, closures, global variables
+- Infinite Loops - Loop conditions, recursion
+- Race Conditions - Async operations, shared state
+- Type Errors - Data type validation, null/undefined handling
+- Performance Issues - Algorithm optimization, resource usage
+- Scope Problems - Variable scope, closure behavior
+- Mutation Issues - Object/array immutability
+- Async/Await Pitfalls - Promise handling, error management
+- Logic Errors - Boolean logic, comparison operators
+- Array/Object Bounds - Index access, property validation
+- Division by Zero - Mathematical error handling
+- Stack Overflow - Recursion depth issues
+- Type Coercion - Implicit type conversion problems
+- Hoisting Issues - Variable and function hoisting
+- This Binding - Context binding problems
 
-## 💼 Practice Exercises (14 Categories)
+## Practice Exercises
 
-Master common programming topics:
+I'm working through 14 exercise categories to master common programming topics:
 
-- **Array Manipulation** - Filter, map, reduce, sorting
-- **String Manipulation** - Parsing, validation, transformation
-- **Object Manipulation** - Deep cloning, merging, iteration
-- **Async Programming** - Promises, async/await, error handling
-- **Algorithms** - Sorting, searching, recursion
-- **Data Structures** - Stacks, queues, trees, graphs
-- **Functional Programming** - Pure functions, immutability
-- **Error Handling** - Try/catch, custom errors, validation
-- **Performance Optimization** - Caching, debouncing, throttling
-- **Testing** - Unit tests, mocking, test utilities
-- **DOM Manipulation** - Event handling, element creation
-- **Security** - XSS prevention, input validation
-- **Utilities** - Helper functions, common patterns
-- **Mock Interview** - Real interview scenarios
+- Array Manipulation - Filter, map, reduce, sorting
+- String Manipulation - Parsing, validation, transformation
+- Object Manipulation - Deep cloning, merging, iteration
+- Async Programming - Promises, async/await, error handling
+- Algorithms - Sorting, searching, recursion
+- Data Structures - Stacks, queues, trees, graphs
+- Functional Programming - Pure functions, immutability
+- Error Handling - Try/catch, custom errors, validation
+- Performance Optimization - Caching, debouncing, throttling
+- Testing - Unit tests, mocking, test utilities
+- DOM Manipulation - Event handling, element creation
+- Security - XSS prevention, input validation
+- Utilities - Helper functions, common patterns
+- Mock Interview - Real interview scenarios
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -74,7 +92,7 @@ Master common programming topics:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Franklin-Osede/javascript-katas.git
+git clone <repository-url>
 
 # Navigate to the project
 cd javascript-katas
@@ -89,6 +107,9 @@ npm install
 # Run all tests
 npm test
 
+# Run tests in watch mode
+npm run test:watch
+
 # Run specific test files
 npm test src/code-smells/smells-1-10/tests/
 
@@ -96,85 +117,60 @@ npm test src/code-smells/smells-1-10/tests/
 npm run test:coverage
 ```
 
-## 🎯 How to Use
+## How I Use This
 
 ### Code Smells Practice
 
-1. **Open a code smell file** (e.g., `smell1-memory-leak.js`)
-2. **Read the TODO comments** to understand the problem
-3. **Use debugging techniques** to identify the issue
-4. **Write tests** in the corresponding test file
-5. **Fix the code** and verify your solution
+1. I open a code smell file (e.g., `smell1-memory-leak.js`)
+2. I read the TODO comments to understand the problem
+3. I use debugging techniques to identify the issue
+4. I write tests in the corresponding test file
+5. I fix the code and verify my solution
 
 ### Practice Exercises
 
-1. **Open an exercise file** (e.g., `array-manipulation.js`)
-2. **Read the requirements** in the TODO comments
-3. **Implement the solution** in the practice file
-4. **Write tests** to validate your implementation
-5. **Compare with the exercise solution**
+1. I open an exercise file (e.g., `array-manipulation.js`)
+2. I read the requirements in the TODO comments
+3. I implement my solution in the corresponding practice file
+4. I write tests to validate my implementation
+5. I compare with the exercise solution
 
-## 🔧 Debugging Techniques
+## Debugging Techniques
 
-Master these debugging skills:
+I'm learning and practicing these debugging skills throughout the exercises:
 
-- **Console Methods**: `log()`, `error()`, `warn()`, `info()`, `table()`, `group()`, `time()`, `trace()`, `count()`, `assert()`, `dir()`
-- **Browser DevTools**: Breakpoints, step-through debugging, performance profiling
-- **Memory Debugging**: Heap snapshots, memory leaks detection
-- **Performance Analysis**: Execution time, resource usage, bottlenecks
+- Console Methods: `log()`, `error()`, `warn()`, `info()`, `table()`, `group()`, `time()`, `trace()`, `count()`, `assert()`, `dir()`
+- Browser DevTools: Breakpoints, step-through debugging, performance profiling
+- Memory Debugging: Heap snapshots, memory leaks detection
+- Performance Analysis: Execution time, resource usage, bottlenecks
+- Node.js Debugging: Inspector protocol, VS Code debugging
 
-## 📚 Learning Path
+## Learning Path
+
+This is my planned learning path as I work through the exercises:
 
 ### Week 1: Code Smells (1-20)
-- Focus on basic debugging techniques
-- Practice with console methods
-- Learn to identify common issues
+Focusing on basic debugging techniques, console methods, and identifying common issues.
 
 ### Week 2: Code Smells (21-40)
-- Advanced debugging scenarios
-- Performance optimization
-- Memory management
+Working on advanced debugging scenarios, performance optimization, and memory management.
 
 ### Week 3: Code Smells (41-60)
-- Complex async patterns
-- Error handling strategies
-- Testing methodologies
+Practicing complex async patterns, error handling strategies, and testing methodologies.
 
 ### Week 4: Code Smells (61-80)
-- Advanced JavaScript concepts
-- Scope and closure issues
-- Object manipulation
+Learning advanced JavaScript concepts, scope and closure issues, object manipulation.
 
 ### Week 5: Code Smells (81-100)
-- Expert-level debugging
-- Complex algorithms
-- Advanced programming patterns
+Tackling expert-level debugging, complex algorithms, advanced programming patterns.
 
 ### Week 6-7: Practice Exercises
-- Practice common programming challenges
-- Implement solutions from scratch
-- Master pair programming scenarios
+Practicing common programming challenges, implementing solutions from scratch.
 
-## 🤝 Contributing
+## Status
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Submit a pull request
+This is a work in progress project. I'm actively adding more exercises and features as I continue learning and practicing JavaScript.
 
-## 📝 License
+## License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- Inspired by common JavaScript programming patterns
-- Designed for practical debugging practice
-- Focused on real-world scenarios
-
----
-
-**Happy Coding! 🚀**
-
-*Practice makes perfect - especially when debugging JavaScript!*
+This project is open source and available under the MIT License.
